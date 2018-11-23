@@ -1,8 +1,9 @@
-import numpy as np
+﻿import numpy as np
 import cv2
 
-
-
+name=['film4.mp4','film4.mp4','film4.mp4','film4.mp4','film2.mp4','film4.mp4','film4.mp4','film4.mp4','film4.mp4','film4.mp4','film4.mp4','film4.mp4','film2.mp4','film3.mp4','film3.mp4','film4.mp4','film1.mp4']
+start=[195000, 165000, 121000, 94000, 208000, 29000, 36000, 56000, 64000 , 72000, 79000, 86000, 234000, 106000, 118000, 4500, 158000]
+stop=[200000, 170000, 124000, 100000, 210000, 30500, 38500, 58000, 68000, 74000, 81000, 88000, 237000, 112000, 121400, 6000, 159500]
 
 templates = [cv2.imread("signs/9.png", 0), cv2.imread("signs/8.png", 0), cv2.imread("signs/7.png", 0), cv2.imread("signs/6.png", 0), cv2.imread("signs/5.png", 0), cv2.imread("signs/4.png", 0), cv2.imread("signs/3.png", 0), cv2.imread("signs/2.png", 0), cv2.imread("signs/1.png", 0)]
 
@@ -123,9 +124,6 @@ def maxSpeed(signCutImage):
 #
 
 
-start=[195000, 165000, 121000, 94000, 208000, 29000, 36000, 56000, 64000 , 72000, 79000, 86000, 234000, 106000, 118000, 4500, 158000]
-stop=[200000, 170000, 124000, 100000, 210000, 30500, 38500, 58000, 68000, 74000, 81000, 88000, 237000, 112000, 121400, 6000, 159500]
-name=['film4.mp4','film4.mp4','film4.mp4','film4.mp4','film2.mp4','film4.mp4','film4.mp4','film4.mp4','film4.mp4','film4.mp4','film4.mp4','film4.mp4','film2.mp4','film3.mp4','film3.mp4','film4.mp4','film1.mp4']
 
 for jj in range(len(name)):
     speedLimit = 'nf'
