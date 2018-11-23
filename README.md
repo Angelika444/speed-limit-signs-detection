@@ -3,9 +3,13 @@
 Program wykorzystuje bibliotekę openCV do wykrywania znaków ograniczeń prędkości na filmach przetwarzanych w czasie rzeczywisty.
 
 Podstawowe kroki programu:
+
 -Odfiltrowywanie kolorów z klatki filmu, tak aby pozostał tylko kolor czerwony
+
 -Wykrywanie koła
+
 -Wycinanie fragmentu z kołem
+
 -Rozpoznawanie cyfr przy pomocy funkcji cv2.matchTemplate()
 
 Aby program działał prawidłowo, należy w folderze src umieścić video, na którym chcemy wykrywać znaki ograniczeń prędkości. Przykładowe filmy z serwisu youtube podane poniżej: 
